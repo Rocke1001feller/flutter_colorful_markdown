@@ -11,31 +11,33 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-markdown version css, convert your markdown colorful
+**markdown version css, convert your markdown colorful**
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-<!-- use gifs -->
+| No images | Images background |
+|--------|--------|
+|  ![Image](https://github.com/user-attachments/assets/e79dbd52-7dc4-4c93-8ff9-3cfdb1a0696a) | ![Image](https://github.com/user-attachments/assets/78597ce8-b1da-405e-b44c-f389cb824eb0) |
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+```dart
+import 'package:flutter_colorful_markdown/flutter_colorful_markdown.dart';
+```
 
 ## Usage
 
 
 ```dart
+// import the package
 import 'package:flutter_colorful_markdown/flutter_colorful_markdown.dart';
-ColorfulMarkdown(
-    backgroundImage: _backgroundImages[Random().nextInt(_backgroundImages.length)], // your background image
+// create new colorful markdown widget
+final ColorfulMarkdown newColorfulMarkdown = ColorfulMarkdown(
+    backgroundImage: _backgroundImages[Random().nextInt(_backgroundImages.length)], // your background image if you need it
     data: _markdownData, // your data
     ),
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Any issuses are welcome
