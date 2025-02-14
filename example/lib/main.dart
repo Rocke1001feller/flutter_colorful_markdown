@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             ColorfulMarkdown(
-              backgroundImage: _backgroundImages[Random().nextInt(_backgroundImages.length)],
+              // backgroundImage: _backgroundImages[Random().nextInt(_backgroundImages.length)],
               data: _markdownData
               ),
             Row(

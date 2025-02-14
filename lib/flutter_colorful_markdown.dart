@@ -33,23 +33,26 @@ class ColorfulMarkdown extends StatelessWidget {
         RandomStyleSheet.getRandomMarkdownStyleSheet(random: Random());
     return Stack(
       children: [
-        // Background image
-        Positioned.fill(
-          child: CachedNetworkImage(
-            imageUrl: backgroundImage ?? 'https://picsum.photos/seed/${Random().nextInt(10000)}/200/300',
-            imageBuilder:
-                (context, imageProvider) => Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: imageProvider,
-                      fit: BoxFit.cover,
+        // Background image or transparent background
+        if (backgroundImage != null)
+          Positioned.fill(
+            child: CachedNetworkImage(
+              imageUrl: backgroundImage!,
+              imageBuilder:
+                  (context, imageProvider) => Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: imageProvider,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
-                ),
-            placeholder: (context, url) => CircularProgressIndicator(),
-            errorWidget: (context, url, error) => Icon(Icons.error),
-          ),
-        ),
+              placeholder: (context, url) => CircularProgressIndicator(),
+              errorWidget: (context, url, error) => Icon(Icons.error),
+            ),
+          )
+        else
+          Positioned.fill(child: Container(color: Colors.transparent)),
         Center(
           child: Container(
             width: MediaQuery.of(context).size.width * 0.9, // Set width

@@ -1,7 +1,7 @@
 name: flutter_colorful_markdown
 description: "A widget that displays markdown with random colorful style."
 version: 0.0.1
-homepage:
+homepage: https://github.com/Rocke1001feller/flutter_colorful_markdown
 
 environment:
   sdk: ^3.7.0
@@ -13,6 +13,7 @@ dependencies:
     sdk: flutter
   flutter_markdown: ^0.7.6+2
   url_launcher: ^6.3.1
+  markdown: ^7.3.0
 
 dev_dependencies:
   flutter_test:
