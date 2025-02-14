@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             ColorfulMarkdown(
-              // backgroundImage: _backgroundImages[Random().nextInt(_backgroundImages.length)],
+              backgroundImage: _backgroundImages[Random().nextInt(_backgroundImages.length)],
               data: _markdownData
               ),
             Row(
@@ -129,4 +129,6 @@ Markdown and LaTeX can be powerful tools for formatting text and mathematical ex
 ''';
 const List<String> _backgroundImages = [
 'https://www.allkpop.com/upload/2023/02/content/131452/web_data/allkpop_1676318355_untitled-1.jpg',
+'https://pic4.zhimg.com/v2-efd4f4517d5bdb43858a04f7e4ff5f7f_r.jpg',
+'https://ts1.cn.mm.bing.net/th/id/R-C.d59defd071ba6667d0f9a4f09663e305?rik=Z5nZoB%2bQyOxpAg&riu=http%3a%2f%2fimage.hnol.net%2fc%2f2013-02%2f06%2f19%2f201302061921067231-3280363.jpg&ehk=5IefOtlW1ii2YJbl2kzi3nzKTSBCINQwHQEGeu8ncX4%3d&risl=&pid=ImgRaw&r=0',
 ];
