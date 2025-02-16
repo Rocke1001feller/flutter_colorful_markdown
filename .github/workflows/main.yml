@@ -8,7 +8,7 @@ name: Publish to pub.dev
 ##     #   working-directory: path/to/sub/directory
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       environment:
         description: If specified, the workflow is required to be run in this environment (with additional approvals).
