@@ -17,7 +17,7 @@ and the Flutter guide for
 
 | No images | Images background |
 |--------|--------|
-|  ![Image](https://guoliufang.fun/github/flutter_colorful_markdown/no_bg_image.gif) | ![Image](https://guoliufang.fun/github/flutter_colorful_markdown/with_image_bg.gif) |
+|  ![Image](https://guoliufangfun.pages.dev/github/flutter_colorful_markdown/no_bg_image.gif) | ![Image](https://guoliufangfun.pages.dev/github/flutter_colorful_markdown/with_image_bg.gif) |
 
 ## Getting started
 
